@@ -1886,8 +1886,11 @@ body.project-single .ajaxpage__content--description .social li a:focus span {
 
 .avatar-holder img {
   border-radius: 50%;
-  width: 130px;
+  width: 150px;
+  height: 150px;
   transition: 350ms;
+  object-fit: cover;
+  object-position: top;
 }
 
 .avatar-holder img:hover {
