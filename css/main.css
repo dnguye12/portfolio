@@ -441,8 +441,7 @@ main .meta.social ul li a span:before {
   color: #fff;
 }
 
-main .meta.social ul li a:hover,
-main .meta.social ul li a:focus {
+main .meta.social ul li a:hover {
   opacity: 1;
 }
 
@@ -1908,12 +1907,22 @@ body.project-single .ajaxpage__content--description .social li a:focus span {
   color: #fff;
 }
 
+.about b {
+  font-weight: 500;
+}
+
 .about .exp {
   font-size: 16px;
 }
 
 .about .exp .job-holder {
   margin-bottom: 16px;
+}
+
+.about .exp .job-holder .first-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .about .exp .job-holder b {
@@ -1924,7 +1933,15 @@ body.project-single .ajaxpage__content--description .social li a:focus span {
   font-size: 16px;
   font-weight: 500;
   color:#b4b4b4;
-  margin-right: 12px;
+}
+
+.about .skill .job-holder {
+  display: flex;
+}
+
+.about .skill .job-holder b {
+  width: 200px;
+  display: inline-block;
 }
 
 .text-holder.last {
