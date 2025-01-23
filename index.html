@@ -1,369 +1,74 @@
 <!DOCTYPE html>
-<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+<html lang="en" data-theme="dracula">
 
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A personal or professional webpage for Nguyen Duc Huy.">
+	<meta name="author" content="Nguyen Duc Huy">
+	<meta name="keywords" content="Nguyen Duc Huy, portfolio, personal website, developer, designer">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<title>Nguyen Duc Huy</title>
 
-	<!-- Behavioral Meta Data -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta property="og:title" content="Nguyen Duc Huy">
+	<meta property="og:description" content="A personal or professional webpage for Nguyen Duc Huy.">
 
-	<!-- Favicon -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Nguyen Duc Huy">
+	<meta name="twitter:description" content="A personal or professional webpage for Nguyen Duc Huy.">
+	<meta name="twitter:image" content="https://example.com/twitter-image.jpg">
+
+	<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+	<script src="https://cdn.tailwindcss.com"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+
+	<link rel="icon" type="image/x-icon" href="/images/favicons/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
 	<link rel="manifest" href="images/favicons/manifest.json">
 	<link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#21252b">
-	<meta name="theme-color" content="#ffffff">
-
-	<!-- Open Graph -->
-	<meta property="og:title" content="Nguyen Duc Huy">
-	<meta property="og:description" content="Nguyen Duc Huy's portfolio.">
-	<meta property="og:image" content="images/preview-image.png">
-	<meta property="og:locale" content="en_US">
-	<meta property="og:site_name" content="Nguyen Duc Huy">
-	<meta property="og:type" content="website">
-
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Nguyen Duc Huy">
-	<meta name="twitter:description" content="Nguyen Duc Huy's portfolio.">
-	<meta name="twitter:image" content="images/preview-image.png">
-
-	<!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-reboot.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
-
-	<!-- Javascript Libraries -->
-	<script src="js/libraries/jquery-3.2.1.min.js"></script>
-	<script src="js/libraries/modernizr-custom.min.js"></script>
-	<script src="js/libraries/velocity.min.js"></script>
-	<script src="js/libraries/three.min.js"></script>
 </head>
 
 <body>
-	<main role="main">
-		<section id="hero" class="hero dark sphere">
-			<div class="hero__content">
-				<p>Portfolio</p>
-				<h1>Nguyen Duc Huy</h1>
-			</div>
-
-			<!-- Trigger Buttons -->
-			<a href="#" class="hero__trigger-button top">About</a>
-			<a href="#" class="hero__trigger-button bottom">Projects</a>
-
-			<div class="meta social">
-				<ul>
-					<li><a href="https://www.linkedin.com/in/duc-huy-nguyen-9392461bb/" target="_blank"><span
-								data-hover="linkedin">linkedin</span></a></li>
-					<li><a href="https://github.com/dnguye12" target="_blank"><span
-								data-hover="github">github</span></a></li>
-					<li><a href="mailto: duchuyng051@gmail.com" target="_blank"><span
-								data-hover="email">email</span></a></li>
-				</ul>
-			</div>
-
-			<div class="meta sound">
-				<a class="mute-action muted" href="#"></a>
-			</div>
-		</section>
-
-		<section id="about" class="about idle">
-			<div class="about__content">
-				<div class="container">
-					<div class="row">
-						<div class="col-10 offset-1 col-md-8 offset-md-2 about__content__box first">
-							<div class="avatar-holder">
-								<img src="images/ava.jpg" alt="logo">
-							</div>
-							<div class="title-holder">
-								<h1>About me</h1>
-							</div>
-							<div class="text-holder">
-								<h5>👋 Hello</h5>
-								<p>I am currently a student in Double Master <b>Human Computer Interaction / Magistère
-										d'informatique</b> in Paris Saclay University.</p>
-								<p>My passion for computer science and designing naturally guides me toward the field of
-									interaction, graphic and design, where I am able to combine my curiosity in
-									programming with my creativity. </p>
-							</div>
-							<div class="text-holder">
-								<h5>💼 Professional experiences</h5>
-								<ul class="exp">
-									<li class="job-holder">
-										<div class="first-line">
-											<span><b>Intern</b>, LISN Paris Saclay University – Paris</span>
-											<span class="time">03/2024 - 08/2024</span>
-										</div>
-
-										<ul>
-											<li>Implemented a facial recognition system, gaze tracking, and pose
-												estimation using <b>Python</b>.</li>
-											<li>Developed an interactive AI agent in <b>Unity</b>, featuring 3D
-												animations, motion capture, adaptive responses, and voice synthesis.
-											</li>
-										</ul>
-									</li>
-									<li class="job-holder">
-										<div class="first-line">
-											<span><b>Junior Developer</b>, Dealsup – Paris</span>
-											<span class="time">02/2023 - 01/2024</span>
-										</div>
-
-										<ul>
-											<li>Designed and implemented the administration page using <b>ReactJS</b>.
-											</li>
-											<li>Enhanced backend security and resolved bugs with <b>ExpressJS</b>.</li>
-										</ul>
-									</li>
-									<li class="job-holder">
-										<div class="first-line">
-											<span><b> Freelancer</b>, Fiverr, Upwork, Discord</span>
-											<span class="time">11/2021 - Present</span>
-										</div>
-
-										<ul>
-											<li>Developed e-commerce websites, especially for online gaming services
-												like Minecraft, GTA 5, ...</li>
-											<li>Completed over 75 projects with a 4.9 rating on Fiverr.</li>
-											<li>Created one of the most downloaded themes for Tebex (Shopify for gaming
-												servers).</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="text-holder">
-								<h5>💪 Skills</h5>
-								<ul class="exp skill">
-									<li class="job-holder"><b>Front-end:</b>React | NextJS | Tailwind | Bootstrap.</li>
-									<li class="job-holder"><b>Back-end:</b>NodeJS | NextJS | ExpressJS.</li>
-									<li class="job-holder"><b>Databases:</b>MongoDB | Convex | Prisma | MySQL.</li>
-									<li class="job-holder"><b>Creative tools:</b>Figma | Premiere Pro | Photoshop.</li>
-									<li class="job-holder"><b>General programming:</b>Java | C++ | Python.</li>
-									<li class="job-holder"><b>English proficiency:</b>C1+ 180/180 Linguaskill Cambridge.
-									</li>
-								</ul>
-							</div>
-							<div class="text-holder last">
-								<h5>🎓 Education</h5>
-								<ul class="exp">
-									<li class="job-holder"><b>Computer Machine Interaction Master</b> | Université Paris
-										Saclay, France |
-										<span class="time">2024 - 2025</span>
-									</li>
-									<li class="job-holder"><b>Computer Science Bachelor</b> | Université Paris Saclay,
-										France |
-										<span class="time">2021 - 2023</span>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<!-- META -->
-						<div class="meta social">
-							<ul>
-								<li><a href="https://www.linkedin.com/in/duc-huy-nguyen-9392461bb/"
-										target="_blank"><span data-hover="linkedin">linkedin</span></a></li>
-								<li><a href="https://github.com/dnguye12" target="_blank"><span
-											data-hover="github">github</span></a></li>
-								<li><a href="mailto: duchuyng051@gmail.com" target="_blank"><span
-											data-hover="email">email</span></a></li>
-							</ul>
-						</div>
-
-						<div class="meta sound">
-							<a class="mute-action muted" href="#"></a>
-						</div>
-						<a href="#" class="close-button top">Close</a>
-					</div>
-		</section>
-
-		<section id="work" class="work idle">
-			<div class="work__content">
-				<div class="container">
-					<div class="row initial-position">
-						<div class="col-10 offset-1 col-md-8 offset-md-2 work__content__box first">
-							<div class="title-holder">
-								<h1>Notable projects</h1>
-							</div>
-							<div class="text-holder">
-								<p>⚒️ I invite you to explore my selection of interesting projects.</p>
-								<p>For your convenience, you can filter these
-									works based on the various categories I have set for each of them.</p>
-							</div>
-
-							<div class="text-holder">
-								<ul class="filters">
-									<li>🔍</li>
-									<li data-filter="*" class="is-checked"><span data-hover="Tous">Tous</span></li>
-									<li data-filter=".fi-uni"><span data-hover="Projet Codage">Projet Codage</span></li>
-									<li data-filter=".fi-ecom"><span data-hover="E-Commerce">E-Commerce</span></li>
-									<li data-filter=".fi-design"><span data-hover="Conception">Conception</span></li>
-								</ul>
-							</div>
-
-						</div>
-					</div>
-
-					<!-- Ajax Section -->
-					<div class="ajax-section clearfix">
-						<div class="ajax-section__loader"></div>
-						<div class="ajax-section__project-navigation">
-							<ul>
-								<li class="next"><a href="#">suivant</a></li>
-								<li class="prev"><a href="#">précédent</a></li>
-							</ul>
-						</div>
-						<div class="ajax-section__project-close">
-							<a href="#">fermer</a>
-						</div>
-						<div class="ajax-section__content"></div>
-					</div>
-					<!-- End Ajax Section -->
-
-					<div class="row work__content__thumbnails">
-						<div class="col-12 col-md-4 project show fi-uni">
-							<a href="#!projects/project1" class="thumbnail">
-								<div class="overlay">
-									<div class="project-info">
-										<p>2048 En C++ Avec QT<br><span>Projet Codage</span></p>
-									</div>
-								</div>
-								<img src="images/pros/01.png" alt="thumbnail">
-							</a>
-						</div>
-						<div class="col-12 col-md-4 project show fi-uni">
-							<a href="#!projects/project2" class="thumbnail">
-								<div class="overlay">
-									<div class="project-info">
-										<p>Proie Et Prédateur En C++ Avec QT<br><span>Projet Codage</span></p>
-									</div>
-								</div>
-								<img src="images/pros/02.png" alt="thumbnail">
-							</a>
-						</div>
-						<div class="col-12 col-md-4 project show fi-ecom">
-							<a href="#!projects/project3" class="thumbnail">
-								<div class="overlay">
-									<div class="project-info">
-										<p>Casade PVP<br><span>E-Commerce</span></p>
-									</div>
-								</div>
-								<img src="images/pros/03.png" alt="thumbnail">
-							</a>
-						</div>
-						<div class="col-12 col-md-4 project show fi-ecom">
-							<a href="#!projects/project4" class="thumbnail">
-								<div class="overlay">
-									<div class="project-info">
-										<p>Complex Gaming<br><span>E-Commerce</span></p>
-									</div>
-								</div>
-								<img src="images/pros/04.png" alt="thumbnail">
-							</a>
-						</div>
-						<div class="col-12 col-md-4 project show fi-design">
-							<a href="#!projects/project5" class="thumbnail">
-								<div class="overlay">
-									<div class="project-info">
-										<p>Aesthe Tebex Theme<br><span>Conception</span></p>
-									</div>
-								</div>
-								<img src="images/pros/05.png" alt="thumbnail">
-							</a>
-						</div>
-						<div class="col-12 col-md-4 project show fi-ecom">
-							<a href="#!projects/project6" class="thumbnail">
-								<div class="overlay">
-									<div class="project-info">
-										<p>Mossy World Store<br><span>E-Commerce</span></p>
-									</div>
-								</div>
-								<img src="images/pros/06.png" alt="thumbnail">
-							</a>
-						</div>
-						<div class="col-12 col-md-4 project show fi-ecom">
-							<a href="#!projects/project7" class="thumbnail">
-								<div class="overlay">
-									<div class="project-info">
-										<p>Alex MC<br><span>E-Commerce</span></p>
-									</div>
-								</div>
-								<img src="images/pros/07.png" alt="thumbnail">
-							</a>
-						</div>
-						<div class="col-12 col-md-4 project show fi-ecom">
-							<a href="#!projects/project8" class="thumbnail">
-								<div class="overlay">
-									<div class="project-info">
-										<p>Sen Vision Store<br><span>E-Commerce</span></p>
-									</div>
-								</div>
-								<img src="images/pros/08.png" alt="thumbnail">
-							</a>
-						</div>
-						<div class="col-12 col-md-4 project show fi-design">
-							<a href="#!projects/project9" class="thumbnail">
-								<div class="overlay">
-									<div class="project-info">
-										<p>Cabani<br><span>Conception</span></p>
-									</div>
-								</div>
-								<img src="images/pros/09.svg" alt="thumbnail">
-							</a>
-						</div>
-						<div class="col-12 col-md-4 project show fi-uni">
-							<a href="#!projects/project10" class="thumbnail">
-								<div class="overlay">
-									<div class="project-info">
-										<p>Le Desert Interdit<br><span>Projet Codage</span></p>
-									</div>
-								</div>
-								<img src="images/pros/010.png" alt="thumbnail">
-							</a>
-						</div>
-					</div>
-				</div>
-				<!-- META -->
-				<div class="meta social">
-					<ul>
-						<li><a href="https://www.linkedin.com/in/duc-huy-nguyen-9392461bb/" target="_blank"><span
-									data-hover="linkedin">linkedin</span></a></li>
-						<li><a href="https://github.com/dnguye12" target="_blank"><span
-									data-hover="github">github</span></a></li>
-						<li><a href="mailto: duchuyng051@gmail.com" target="_blank"><span
-									data-hover="email">email</span></a></li>
-					</ul>
-				</div>
-
-				<div class="meta sound">
-					<a class="mute-action muted" href="#"></a>
-				</div>
-				<a href="#" class="close-button bottom">Close</a>
-			</div>
-		</section>
+	<main class="relative w-screen h-screen flex justify-center items-center">
+		<div class="container relative z-40 text-white text-center">
+			<h1 class="text-6xl font-bold mb-8">Hello👋</h1>
+			<p class="text-lg leading-[1.5]">I'm in the process of moving my portfolio to a new website.</p>
+			<p class="text-lg leading-[1.5]">I am really sorry for this inconvenience</p>
+			<p class="text-lg leading-[1.5]">You can check out my new website here:</p>
+			<a href="" target="_blank" class="btn btn-wide btn-outline btn-primary text-lg font-bold uppercase mt-8">Go
+				to new site 🏃‍♂️‍➡️</a>
+		</div>
+		<div id="background" class="block w-full h-full absolute top-0 left-0 z-0"></div>
 	</main>
-
-	<!-- Noise -->
-	<div class="grain"></div>
-
-	<!-- Javascript -->
-	<script src="js/plugins/queryloader.min.js" type="text/javascript"></script>
-	<script src="js/plugins/retina.min.js" type="text/javascript"></script>
-	<script src="js/plugins/ion.sound.min.js" type="text/javascript"></script>
-	<script src="js/plugins/imagesloaded.min.js" type="text/javascript"></script>
-	<script src="js/plugins/jquery-ui.min.js" type="text/javascript"></script>
-	<script src="js/plugins/jquery.fitvids.js" type="text/javascript"></script>
-	<script src="js/plugins/jquery.event.move.js" type="text/javascript"></script>
-	<script src="js/plugins/jquery.event.swipe.js" type="text/javascript"></script>
-	<script src="js/plugins/unslider.js" type="text/javascript"></script>
-	<script src="js/3d/projector.js" type="text/javascript"></script>
-	<script src="js/3d/canvasrenderer.js" type="text/javascript"></script>
-	<script src="js/3d/sphere-dark.js" type="text/javascript"></script>
-	<script src="js/main.js" type="text/javascript"></script>
 </body>
+<style>
+	body {
+		font-family: "Montserrat", serif;
+		font-optical-sizing: auto;
+	}
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+<script>
+	VANTA.GLOBE({
+		el: "#background",
+		mouseControls: true,
+		touchControls: true,
+		gyroControls: false,
+		minHeight: 200.00,
+		minWidth: 200.00,
+		scale: 1.00,
+		scaleMobile: 1.00,
+		backgroundColor: "#14161b"
+	})
+</script>
 
 </html>
